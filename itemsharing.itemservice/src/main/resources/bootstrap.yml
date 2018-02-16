@@ -1,9 +1,9 @@
-spring:
-  application:
-    name: itemservice
-  profiles:
-    active: default
-  cloud:
-    config:
-      uri: http://localhost:8888
+#spring:
+#  application:
+#    name: itemservice
+#  profiles:
+#    active: default
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
     

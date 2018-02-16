@@ -1,24 +1,23 @@
-#spring:
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: "true"
-#    properties:
-#      hibernate:
-#        dialect: "org.hibernate.dialect.MySQL5Dialect"
-#  database:
-#    driverClassName: "com.mysql.jdbc.Driver"
-#  datasource:
-#    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
-#    username: "root"
-#    password: "Rochester24"
-#    testWhileIdle: "true"
-#    validationQuery: "SELECT 1"
-#    
-#security:
-#  basic:
-#    enabled: false
-#
-#server:
-#  port: 8082
-# 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQL5Dialect"
+  database:
+    driverClassName: "com.mysql.jdbc.Driver"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
+    username: "dipesh"
+    password: "{cipher}7088ef000ef23a5b0a830d09c37cc905a7a0ffacd39ec84bc58808f0d52d5047"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+
+server:
+  port: 8082
+
+security:
+  basic:
+    enabled: false
