@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
 			
 			String encryptedPassword = SecurityUtility.passwordEncoder().encode(user.getPassword());
 			user.setPassword(encryptedPassword);
-			localUser = userRepository.save(user);
+			localUser = userRepository.saveAndFlush(user);
 		}
 		
 		return localUser;
